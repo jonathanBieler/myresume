@@ -1,0 +1,107 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage{verbatim}
+
+\newcommand{\Csharp}{%
+  {\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\#}}}}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Jonathan}
+\familyname{Bieler}
+\address{Avenue de Saugiaz 14}{1020 Renens, Switzerland}    % optional, remove the line if not wanted
+\mobile{(+41) 79 281 36 00}                    % optional, remove the line if not wanted
+\email{jonathan.bieler@alumni.epfl.ch}                      % optional, remove the line if not wanted
+\homepage{github.com/jonathanBieler}                % optional, remove the line if not wanted
+%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+
+\cventry{2010 – 2015}{EPFL Ph.D. Molecular Life Sciences}{Ecole polytechnique fédérale de Lausanne}{Switzerland}{}{}
+\cvline{keywords}{\small Circadian clock, cell cycle, microscopy, single cell, modeling, Drosophila segmentation, data analysis}
+\cvline{advisor}{\small Professor Felix Naef}
+\cventry{2007 – 2009}{MS, Life Sciences}{Ecole polytechnique fédérale de Lausanne}{Switzerland}{}{}
+\cvline{award}{\small Best master in bioinformatics}
+\cventry{2005 – 2007}{BS, Life Sciences}{Ecole polytechnique fédérale de Lausanne}{Switzerland}{}{}  % arguments 3 to 6 can be left empty
+
+\section{Experience}
+
+\cventry{2015}{Research Assistant}{Ecole polytechnique fédérale de Lausanne}{Switzerland}{}{
+Developed a statistical framework to analyse single cell time series base on Hidden Markov Models under the supervision of Prof. Felix Naef.
+}
+
+\cventry{2010--2015}{Teaching Assistant}{Ecole polytechnique fédérale de Lausanne}{Switzerland}{}{
+} 
+
+\section{Publications}
+
+\cventry{2015}{Robust synchronization of coupled circadian and cell cycle oscillators in single mammalian cells}{Bieler J, Cannavo R, Gustafson K, Gobet C, Gatfield D, Naef F}{Molecular Systems Biology}{}{
+} 
+
+\cventry{2011}{Whole-embryo modeling of early segmentation in Drosophila identifies robust
+and fragile expression domains}{Bieler J, Pozzorini C, Naef F}{Biophysical journal}{}{}
+\cvline{website}{\small http://3d-flies.epfl.ch/} 
+
+\section{Technical Experience}
+\subsection{Proficient With}
+\cvline{languages}{Matlab, Julia, Mathematica}
+\cvline{technologies}{Image segmentation and object tracking, Statistical models, Differential equations, Machine learning, Data analysis and visualisation, fluorescence microscopy}
+\cvline{tools}{\LaTeX{}, Git, Inkscape, Gimp, Windows, Ubuntu, OSX}
+
+\subsection{Have Experience With}
+\cvline{languages}{C, R, Python, \Csharp{}, PHP, HTML, CSS, Lua, Javascript}
+\cvline{technologies}{MySQL, SQLite, Apache, Code Igniter CMS, Gtk}
+
+
+\clearpage
+\section{Talks}
+
+\cventry{2009}{Modeling 3D Flies: reconstructing the drosophila segmentation network on the embryo geometry}{RECOMB Satellite on Systems Biology}{Boston, MIT, Broad}{}{
+} 
+\cventry{2010}{Waves solutions in biological oscilatory media}{RECOMB Satellite on Systems Biology}{Kronos 10, Timing and Dynamics in Biological Systems}{Dresden, Max Planck Institute}{
+} 
+\cventry{2014}{Coupling between cell cycle and circadian clock in single mammalian cells}{The Eighth Annual q-bio Conference}{Santa Fe,New Mexico Consortium}{}{
+} 
+
+\section{Others}
+
+
+\cventry{2016}{Web development}{}{}{}{
+Developed a website to present my Grandfather's paintings: http://www.art20thcentury.com/lucien/
+}
+
+
+\end{document}
